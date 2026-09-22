@@ -5,8 +5,10 @@
 body {
   min-height: 100dvh;
   overflow-x: hidden;
-  /* background-color: var(--color-bg-primary); */
+  background-color: var(--color-beige);
   color: var(--color-black);
+
+  padding: var(--space-4);
 }
 
 /* ================================================== */

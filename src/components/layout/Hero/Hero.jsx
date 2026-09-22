@@ -28,12 +28,12 @@ import React from "react";
 
 export default function Hero() {
     return <section className={css.section}>
-        {/* <Image
+        <Image
             src="/images/hero_img.webp"
             alt="Гори і небо"
             fill
             className={css.img}
-        />; */}
+        />;
 
         <div className={css.title_container}>
             <h1 className={`f_capitalize f_center ${css.h1}`}>
@@ -42,6 +42,12 @@ export default function Hero() {
                 <span className={`f_h1_helvetica ${css.title_bar_primary}`}>продуктового</span>
                 <span className={`f_h1_helvetica ${css.title_bar_primary}`}>дизайнера</span>
             </h1>
+        </div>
+
+        <div className={css.bottom}>
+            <p className={`f_mono_s f_uppercase ${css.p}`}>
+                аі використав для висновків. 7 речень. Воно об’єктивно краще підсумовує великі обсяги даних. Решта роботи над репортом - руцями і головою: Рісьорч, дизайн, розробка. Вважайте мене дєдом-старовєром. Я люблю процес і креативність.
+            </p>
         </div>
     </section>
 };

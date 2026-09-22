@@ -6,18 +6,21 @@
     /* */
     /* Font size */
     --font-size-helvetica-h1: clamp(5rem, 4.5903rem + 0.8811vw, 6rem);--font-size-baskerville-h1: clamp(2.5rem, 1.8855rem + 1.3216vw, 4rem);
+    --font-size-geist-s: calc(var(--space-5) + var(--space-px));
 
     /* ================================================== */
     /* */
     /* Line-height */
     --font-line-height-helvetica-h1: 1;
     --font-line-height-baskerville-h1: 1;
+    --font-line-height-geist-s: 1.5;
 
     /* ================================================== */
     /* */
     /* Letter-spacing */
     --font-letter-spacing-helvetica-h1: -4%;
     --font-letter-spacing-baskerville-h1: -6%;
+    --font-letter-spacing-geist-s: 4%;
 }
 
 .f_h1_helvetica {
@@ -34,6 +37,14 @@
     font-weight: 600;
     line-height: var(--font-line-height-baskerville-h1);
     letter-spacing: var(--font-letter-spacing-baskerville-h1);
+}
+
+.f_mono_s {
+    font-family: var(--font-geist), var(--font-fallback);
+    font-size: var(--font-size-geist-s);
+    font-weight: 500;
+    line-height: var(--font-line-height-geist-s);
+    letter-spacing: var(--font-letter-spacing-geist-s);
 }
 
 .f_uppercase {
