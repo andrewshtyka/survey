@@ -1,0 +1,57 @@
+:root {
+    /* Fallback */
+    --font-fallback: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    
+    /* ================================================== */
+    /* */
+    /* Font size */
+    --font-size-helvetica-h1: clamp(5rem, 4.5903rem + 0.8811vw, 6rem);--font-size-baskerville-h1: clamp(2.5rem, 1.8855rem + 1.3216vw, 4rem);
+
+    /* ================================================== */
+    /* */
+    /* Line-height */
+    --font-line-height-helvetica-h1: 1;
+    --font-line-height-baskerville-h1: 1;
+
+    /* ================================================== */
+    /* */
+    /* Letter-spacing */
+    --font-letter-spacing-helvetica-h1: -4%;
+    --font-letter-spacing-baskerville-h1: -6%;
+}
+
+.f_h1_helvetica {
+    font-family: var(--font-helvetica), var(--font-fallback);
+    font-size: var(--font-size-helvetica-h1);
+    font-weight: 500;
+    line-height: var(--font-line-height-helvetica-h1);
+    letter-spacing: var(--font-letter-spacing-helvetica-h1);
+}
+
+.f_h1_baskerville {
+    font-family: var(--font-baskerville), var(--font-fallback);
+    font-size: var(--font-size-baskerville-h1);
+    font-weight: 600;
+    line-height: var(--font-line-height-baskerville-h1);
+    letter-spacing: var(--font-letter-spacing-baskerville-h1);
+}
+
+.f_uppercase {
+    text-transform: uppercase;
+}
+
+.f_capitalize {
+    text-transform: capitalize;
+}
+
+.f_left {
+    text-align: start;
+}
+
+.f_right {
+    text-align: end;
+}
+
+.f_center {
+    text-align: center;
+}

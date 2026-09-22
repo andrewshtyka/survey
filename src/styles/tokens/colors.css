@@ -1,0 +1,6 @@
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(27, 12%, 18%);
+    --color-beige: hsl(50, 38%, 87%);
+    --color-orange: hsl(31, 100%, 68%);
+}
