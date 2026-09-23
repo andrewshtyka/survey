@@ -9,6 +9,7 @@
 
 // components
 import Hero from "@/components/layout/Hero/Hero";
+import About from "@/components/layout/About/About";
 
 // constants
 
@@ -25,5 +26,8 @@ import React from "react";
 // #endregion ===========================
 
 export default function HomePage() {
-    return <Hero />;
+    return <>
+        <Hero />
+        <About />
+    </>;
 }

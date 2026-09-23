@@ -6,28 +6,36 @@
     /* */
     /* Font size */
     --font-size-helvetica-h1: clamp(2.5rem, 0.6132rem + 9.434vw, 5rem);
+    --font-size-helvetica-h2: clamp(2.5rem, 1.7453rem + 3.7736vw, 3.5rem);
     --font-size-baskerville-h1: clamp(1.5rem, 0.7453rem + 3.7736vw, 2.5rem);
     --font-size-geist-s: calc(var(--space-5) + var(--space-px));
+    --font-size-geist-m: clamp(0.6875rem, 0.546rem + 0.7075vw, 0.875rem);
 
     /* ================================================== */
     /* */
     /* Line-height */
     --font-line-height-helvetica-h1: 1;
+    --font-line-height-helvetica-h2: 1;
     --font-line-height-baskerville-h1: 1;
     --font-line-height-geist-s: 1.5;
+    --font-line-height-geist-m: 1.3;
 
     /* ================================================== */
     /* */
     /* Letter-spacing */
     --font-letter-spacing-helvetica-h1: -4%;
+    --font-letter-spacing-helvetica-h2: -6%;
     --font-letter-spacing-baskerville-h1: -6%;
     --font-letter-spacing-geist-s: 4%;
+    --font-letter-spacing-geist-m: 4%;
 }
 
 @media (width >= 744px) {
     :root {
         --font-size-helvetica-h1: clamp(5rem, 4.5903rem + 0.8811vw, 6rem);
+        --font-size-helvetica-h2: clamp(3.5rem, 2.8855rem + 1.3216vw, 5rem);
         --font-size-baskerville-h1: clamp(2.5rem, 1.8855rem + 1.3216vw, 4rem);
+        --font-size-geist-m: var(--space-7);
   }
 }
 
@@ -37,6 +45,14 @@
     font-weight: 500;
     line-height: var(--font-line-height-helvetica-h1);
     letter-spacing: var(--font-letter-spacing-helvetica-h1);
+}
+
+.f_h2_helvetica {
+    font-family: var(--font-helvetica), var(--font-fallback);
+    font-size: var(--font-size-helvetica-h2);
+    font-weight: 500;
+    line-height: var(--font-line-height-helvetica-h2);
+    letter-spacing: var(--font-letter-spacing-helvetica-h2);
 }
 
 .f_h1_baskerville {
@@ -53,6 +69,14 @@
     font-weight: 500;
     line-height: var(--font-line-height-geist-s);
     letter-spacing: var(--font-letter-spacing-geist-s);
+}
+
+.f_mono_m {
+    font-family: var(--font-geist), var(--font-fallback);
+    font-size: var(--font-size-geist-m);
+    font-weight: 500;
+    line-height: var(--font-line-height-geist-m);
+    letter-spacing: var(--font-letter-spacing-geist-m);
 }
 
 .f_uppercase {

@@ -33,6 +33,7 @@ export default function Hero() {
             alt="Гори і небо"
             fill
             className={css.img}
+            loading="eager"
         />
 
         <div className={css.title_container}>

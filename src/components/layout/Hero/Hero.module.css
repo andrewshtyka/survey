@@ -7,11 +7,11 @@
     flex-direction: column;
     padding: var(--space-8);
     position: relative;
+    background-color: var(--color-black);
 }
 
 .img {
     object-fit: cover;
-    z-index: -1;
 }
 
 
@@ -95,6 +95,7 @@
     border-top: var(--space-px) solid var(--color-beige);
     justify-content: space-between;
     column-gap: var(--space-11);
+    z-index: 0;
 }
 
 .p {
