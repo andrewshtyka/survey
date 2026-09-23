@@ -100,7 +100,7 @@
 
 .p {
     padding-block-start: var(--space-8);
-    max-width: 66ch;
+    max-width: 76ch;
 
     flex: 1;
 }

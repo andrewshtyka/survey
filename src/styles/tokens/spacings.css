@@ -29,7 +29,13 @@
     /* ================================================== */
     /* */
     /* Gaps */
-    --gap-l: var(--space-19);
+    --gap-l: var(--space-18);
 
     --col-gap: var(--space-11);
+}
+
+@media (width >= 744px) {
+    :root {
+        --gap-l: var(--space-19);
+    }
 }

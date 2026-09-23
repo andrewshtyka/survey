@@ -1,0 +1,62 @@
+/**
+* ======================================== main
+*/
+
+.section {
+    background-color: var(--color-black);
+    padding-block-start: var(--col-gap);
+    padding-block-end: calc(var(--col-gap) * 4);
+    padding-inline: var(--space-6);
+
+    display: flex;
+    flex-direction: column;
+}
+
+@media (width >= 744px) {
+    .section {
+        padding-inline: var(--space-11);
+    }
+}
+
+.h1 {
+    color: var(--color-beige);
+    margin-block-end: var(--space-6);
+}
+
+@media (width >= 744px) {
+    .h1 {
+        margin-block-end: var(--space-11);
+    }
+}
+
+/**
+ * ======================================== list
+ */
+
+.list {
+    padding-block-start: var(--space-14);
+
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--space-15);
+
+    position: relative;
+}
+
+@media (width >= 744px) {
+    .list {
+        padding-block-start: var(--space-16);
+    }
+}
+
+@media (width >= 1024px) {
+    .list {
+        row-gap: var(--space-0);
+    }
+}
+
+@media (width >= 1200px) {
+    .list {
+        padding-block-start: var(--space-17);
+    }
+}

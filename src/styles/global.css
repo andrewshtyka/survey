@@ -9,6 +9,7 @@ body {
   color: var(--color-black);
 
   padding: var(--space-4);
+  text-wrap: balance;
 }
 
 /* ================================================== */
