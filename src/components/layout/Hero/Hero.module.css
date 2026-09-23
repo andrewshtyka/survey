@@ -77,7 +77,13 @@
 .third {
     transform: rotate(-2deg);
     top: calc(var(--space-8) * -1);
-    left: var(--space-18);
+    left: 10svw;
+}
+
+@media (width >= 744px) {
+    .third {
+        left: 20%;
+    }
 }
 
 /**
@@ -99,10 +105,16 @@
 }
 
 .arrow_container {
-    background-color: var(--color-beige);
-    aspect-ratio: 1;
+    display: none;
+}
+
+@media (width >= 744px) {
+    .arrow_container {
+        display: grid;
+        place-content: center;
+
+        background-color: var(--color-beige);
+        aspect-ratio: 1;
     
-    display: grid;
-    place-content: center;
-    
+    }
 }
