@@ -1,3 +1,6 @@
+/**
+ * ======================================== main
+ */
 .section {
     height: calc(100dvh - var(--space-4) * 2);
     display: flex;
@@ -11,6 +14,10 @@
     z-index: -1;
 }
 
+
+/**
+ * ======================================== title
+ */
 .title_container {
     flex: 1;
     display: flex;
@@ -21,7 +28,7 @@
 .h1 {
     display: flex;
     flex-direction: column;
-    margin-block-end: 7vmin;
+    margin-block-end: 5vmin;
 }
 
 .title_bar_primary,
@@ -39,18 +46,63 @@
 }
 
 .title_bar_secondary {
-    background-color: var(--color-orange);
     padding-inline: clamp(0.5rem, 0.3976rem + 0.2203vw, 0.75rem);
     padding-block: clamp(0.125rem, 0.0226rem + 0.2203vw, 0.375rem);
+
+    transform: rotate(-2deg);
+    z-index: 1;
 }
 
+.dither_bg {
+    width: 100%;
+    
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    
+    background-color: var(--color-orange);
+    background-image: url("/images/dither_orange.png");
+}
+
+.first {
+    transform: rotate(-1deg);
+    top: calc(var(--space-3) * -1);
+}
+
+.second {
+    transform: rotate(1deg);
+    top: calc(var(--space-4) * -1);
+}
+
+.third {
+    transform: rotate(-2deg);
+    top: calc(var(--space-8) * -1);
+    left: var(--space-18);
+}
+
+/**
+ * ======================================== bottom
+ */
 .bottom {
     display: flex;
     color: var(--color-beige);
     border-top: var(--space-px) solid var(--color-beige);
+    justify-content: space-between;
+    column-gap: var(--space-11);
 }
 
 .p {
     padding-block-start: var(--space-8);
-    max-width: 90ch;
+    max-width: 66ch;
+
+    flex: 1;
+}
+
+.arrow_container {
+    background-color: var(--color-beige);
+    aspect-ratio: 1;
+    
+    display: grid;
+    place-content: center;
+    
 }

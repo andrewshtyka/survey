@@ -17,8 +17,8 @@ import "@/styles/global.css";
 // #endregion ===========================
 
 export const metadata = {
-    title: "Next.js 16 Project Starter",
-    description: "Description for Next.js 16 Project Starter",
+    title: "Яке воно? Портфоліо продуктового дизайнера.",
+    description: "Результати опитування серед керівників дизайн відділів продуктових компаній.",
 };
 
 export default function RootLayout({ children }) {
