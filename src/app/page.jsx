@@ -11,6 +11,7 @@
 import Hero from "@/components/layout/Hero/Hero";
 import About from "@/components/layout/About/About";
 import Results from "@/components/layout/Results/Results";
+import AnswersStart from "@/components/layout/AnswersStart/AnswersStart";
 
 // constants
 
@@ -31,5 +32,6 @@ export default function HomePage() {
         <Hero />
         <About />
         <Results />
+        <AnswersStart />
     </>;
 }

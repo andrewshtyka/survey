@@ -1,0 +1,154 @@
+/**
+ * ======================================== main
+ */
+.section {
+    height: calc(80dvh - var(--space-4) * 2);
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-8);
+    position: relative;
+    background-color: var(--color-black);
+}
+
+.img {
+    object-fit: cover;
+}
+
+/**
+ * ======================================== title
+ */
+.title_container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.title_bar_primary,
+.title_bar_secondary {
+    margin-inline: auto;
+    display: flex;
+    position: relative;
+}
+
+.title_bar_tertiary {
+    margin-inline: auto;
+    display: flex;
+    position: absolute;
+}
+
+.title_bar_primary {
+    background-color: var(--color-beige);
+    padding-inline: clamp(0.25rem, 0.0613rem + 0.9434vw, 0.5rem);
+    padding-block-start: clamp(0rem, -0.1024rem + 0.2203vw, 0.25rem);
+    padding-block-end: clamp(0.25rem, 0.0613rem + 0.9434vw, 0.5rem);
+}
+
+.title_bar_secondary {
+    padding-inline: clamp(0.5rem, 0.3976rem + 0.2203vw, 0.75rem);
+    padding-block-start: clamp(0.125rem, 0.0226rem + 0.2203vw, 0.375rem);
+    padding-block-end: clamp(0.25rem, -0.1274rem + 1.8868vw, 0.75rem);;
+    z-index: 1;
+
+    transform: rotate(-2deg);
+    right: -12%;
+    top: calc(var(--space-4) * -1);
+}
+
+@media (width >=744px) {
+    .title_bar_secondary {
+        right: -18%;
+    }
+}
+
+
+.title_bar_tertiary {
+    padding-inline: clamp(0.5rem, 0.3976rem + 0.2203vw, 0.75rem);
+    z-index: 1;
+    top: -40%;
+    right: -13%;
+    transform: rotate(5deg);
+}
+
+.dither_bg {
+    width: 100%;
+
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background-color: var(--color-orange);
+    background-image: url("/images/dither_orange.png");
+}
+
+.first {
+    transform: rotate(1deg);
+    right: 10%;
+}
+
+@media (width >= 744px) {
+    .first {
+        right: 20%;
+    }
+}
+
+.second {
+    transform: rotate(1deg);
+    right: 7%;
+    top: calc(var(--space-8) * -1);
+}
+
+@media (width >= 744px) {
+    .second {
+        right: 15%;
+    }
+}
+
+.third {
+    transform: rotate(-1deg);
+    left: -6%;
+    top: calc(var(--space-8) * -1);
+}
+
+@media (width >= 744px) {
+    .third {
+        left: 15%;
+    }
+}
+
+/**
+ * ======================================== icon
+ */
+.container_icon {
+    display: flex;
+    height: clamp(2.75rem, 1.8066rem + 4.717vw, 4rem);
+    width: fit-content;
+    
+    position: relative;
+    padding: var(--space-4);
+    background-color: var(--color-orange);
+    z-index: 0;
+
+    top: calc(var(--space-9) * -1);
+    left: var(--space-14);
+    transform: rotate(8deg);
+}
+
+@media (width >= 744px) {
+    .container_icon {
+        top: calc(var(--space-11) * -1);
+        left: var(--space-11);
+    }
+}
+
+.icon {
+    height: 100%;
+    width: auto;
+    mix-blend-mode: darken;
+    opacity: 0.8;
+}

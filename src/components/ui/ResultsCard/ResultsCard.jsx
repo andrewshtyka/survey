@@ -59,7 +59,7 @@ export default function ResultsCard({
                         <span className={css.number_bg} />
                         #{number}
                     </p>
-                    <h4 className={`f_h3_helvetica ${css.title}`}>{question}</h4>
+                    <h4 className={`f_h4_helvetica ${css.title}`}>{question}</h4>
                     <p className={`f_body_l_helvetica ${css.answer}`}>{answer}</p>
                 </div>
             </li>;
