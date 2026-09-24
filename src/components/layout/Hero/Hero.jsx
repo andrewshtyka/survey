@@ -14,6 +14,9 @@ import Arrow from '@/components/icons/Arrow/Arrow';
 
 // constants
 
+// data
+import { dataHero } from "@/data/hero";
+
 // hooks
 
 // providers / context
@@ -29,8 +32,8 @@ import React from "react";
 export default function Hero() {
     return <section className={css.section}>
         <Image
-            src="/images/hero_img.webp"
-            alt="Гори і небо"
+            src={dataHero.image.src}
+            alt={dataHero.image.alt}
             fill
             className={css.img}
             loading="eager"
@@ -40,17 +43,23 @@ export default function Hero() {
             <h1 className={`f_capitalize f_center ${css.h1}`}>
                 <span className={`f_h1_baskerville ${css.title_bar_secondary}`}>
                     <span className={css.dither_bg} />
-                    яке воно?
+                    {dataHero.title[0]}
                 </span>
-                <span className={`f_h1_helvetica ${css.title_bar_primary} ${css.first}`}>портфоліо</span>
-                <span className={`f_h1_helvetica ${css.title_bar_primary} ${css.second}`}>продуктового</span>
-                <span className={`f_h1_helvetica ${css.title_bar_primary} ${css.third}`}>дизайнера</span>
+                <span className={`f_h1_helvetica ${css.title_bar_primary} ${css.first}`}>
+                    {dataHero.title[1]}
+                </span>
+                <span className={`f_h1_helvetica ${css.title_bar_primary} ${css.second}`}>
+                    {dataHero.title[2]}
+                </span>
+                <span className={`f_h1_helvetica ${css.title_bar_primary} ${css.third}`}>
+                    {dataHero.title[3]}
+                </span>
             </h1>
         </div>
 
         <div className={css.bottom}>
             <p className={`f_mono_s f_uppercase ${css.p}`}>
-                llm використав для формування висновків, це 7 речень. воно об’єктивно краще підсумовує великі обсяги даних. Решта роботи над репортом - руцями і головою: Рісьорч, дизайн, розробка. Сюди llm не пускаю.
+                {dataHero.description}
             </p>
             <div className={css.arrow_container}>
                 <Arrow width="24" />

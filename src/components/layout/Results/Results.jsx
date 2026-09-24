@@ -35,13 +35,13 @@ export default function Results() {
 
     return <section className={css.section}>
         <h2 className={`f_h1_helvetica f_capitalize ${css.h1}`}>
-            Висновки
+            {dataResults.title}
         </h2>
 
         <Line color="beige" />
 
         <ul className={css.list}>
-            {dataResults.map(({id, question, answer, angle}) => (
+            {dataResults.data.map(({id, question, answer, angle}) => (
                 <ResultsCard
                     key={id}
                     number={id}

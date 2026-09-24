@@ -14,6 +14,9 @@ import Asterisk from '@/components/icons/Asterisk/Asterisk';
 
 // constants
 
+// data
+import { dataAbout } from '@/data/about';
+
 // hooks
 
 // providers / context
@@ -28,7 +31,7 @@ import React from "react";
 
 export default function About() {
     return <section className={css.section}>
-        <h2 className={`f_h1_helvetica f_capitalize ${css.h1}`}>Про опитування</h2>
+        <h2 className={`f_h1_helvetica f_capitalize ${css.h1}`}>{dataAbout.title}</h2>
 
         <Line />
 
