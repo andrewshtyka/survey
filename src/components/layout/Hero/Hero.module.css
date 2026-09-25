@@ -100,9 +100,15 @@
 
 .p {
     padding-block-start: var(--space-8);
-    max-width: 76ch;
+    max-width: initial;
 
     flex: 1;
+}
+
+@media (width >= 744px) {
+    .p {
+        max-width: 76ch;
+    }
 }
 
 .arrow_container {
