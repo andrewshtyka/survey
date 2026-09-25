@@ -30,7 +30,7 @@ export default function ListItemText({id, text = [], isLast = false}) {
     return <li
             className={css.li_card}
             style={{
-                marginBlockEnd: isLast ? 0 : "var(--gap-s)"
+                marginBlockEnd: isLast ? 0 : "calc(var(--gap-s) * 0.75)"
             }}
         >
         <p className={`f_mono_m ${css.number}`}>{appliedNumber}</p>
