@@ -1,0 +1,140 @@
+/**
+ * ======================================== main
+ */
+.li {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    
+    --offset: var(--space-0);
+    
+    border-left: none;
+    border-top: var(--space-px) solid var(--color-black);
+}
+
+@media (width >= 744px) {
+    .li {
+        border-left: var(--space-px) solid var(--color-black);
+        border-top: none;
+
+        --offset: var(--space-20);
+    }
+}
+
+/**
+ * ======================================== percent bar
+ */
+.dither_bg {
+    width: 100%;
+
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.container_percent {
+    display: flex;
+    column-gap: var(--space-1);
+    padding-inline-start: var(--space-0);
+    padding-block-end: var(--space-4);
+
+    border-bottom: none;
+    margin-block-end: var(--space-2);
+
+    padding-block-start: var(--space-4);
+}
+
+@media (width >= 744px) {
+    .container_percent {
+        padding-block-start: var(--space-0);
+        padding-inline-start: var(--space-6);
+        margin-block-end: var(--space-6);
+        border-bottom: var(--space-px) solid var(--color-black);
+    }
+}
+
+.percent {
+    padding-block-start: var(--space-px);
+}
+
+@media (width >= 744px) {
+    .percent {
+        padding-block-start: var(--space-1);
+    }
+}
+
+/**
+ * ======================================== top text
+ */
+.top_text {
+    background-color: var(--color-black);
+    width: fit-content;
+    background-color: var(--color-white);
+
+    padding-inline: var(--space-4);
+    padding-block-start: var(--space-1);
+    padding-block-end: var(--space-2);
+
+    margin-inline-start: var(--space-0);
+}
+
+@media (width >= 744px) {
+    .top_text {
+        margin-inline-start: var(--space-6);
+        padding-block-start: var(--space-2);
+            padding-block-end: var(--space-3);
+    }
+}
+
+
+/**
+ * ======================================== viewport
+ */
+.mobile {
+    display: initial;
+    position: absolute;
+    top: var(--space-6);
+    right: 0;
+}
+
+@media (width >= 744px) {
+    .mobile {
+        display: none;
+    }
+}
+
+.desktop {
+    display: none;
+}
+
+@media (width >=744px) {
+    .desktop {
+        display: initial;
+        margin-inline-start: var(--space-6);
+    }
+}
+
+/**
+ * ======================================== img desktop
+ */
+.img_desktop {
+    object-fit: contain;
+    width: 100%;
+    max-width: var(--space-15);
+    height: auto;
+}
+
+@media (width >= 744px) {
+    .img_desktop {
+        max-width: var(--space-19);
+    }
+}
+
+/**
+ * ======================================== img mobile
+ */
+.img_mobile {
+    object-fit: contain;
+    height: var(--space-17);
+    width: auto;
+}
