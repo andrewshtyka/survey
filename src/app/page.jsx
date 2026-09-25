@@ -17,6 +17,9 @@ import Question_2 from "@/components/layout/Question_2/Question_2";
 import Question_3 from "@/components/layout/Question_3/Question_3";
 import Question_4 from "@/components/layout/Question_4/Question_4";
 import Question_5 from "@/components/layout/Question_5/Question_5";
+import Question_6 from "@/components/layout/Question_6/Question_6";
+import Question_7 from "@/components/layout/Question_7/Question_7";
+import Final from "@/components/ui/Final/Final";
 
 // constants
 
@@ -43,5 +46,8 @@ export default function HomePage() {
         <Question_3 />
         <Question_4 />
         <Question_5 />
+        <Question_6 />
+        <Question_7 />
+        <Final />
     </>;
 }

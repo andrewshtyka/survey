@@ -18,7 +18,7 @@
  * ======================================== number
  */
 .number {
-    padding-block-start: var(--space-6);
+    padding-block-start: var(--space-5);
 }
 
 /**
@@ -26,11 +26,15 @@
  */
 .text {
     grid-column: 2 / -1;
-    padding-block-start: var(--space-6);
+    padding-block-start: var(--space-5);
 }
 
 @media (width >= 1200px) {
     .text {
         grid-column: 3 / -2;
     }
+}
+
+.text_item {
+    margin-block-end: var(--space-6);
 }

@@ -1,0 +1,51 @@
+.section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: var(--col-gap);
+}
+
+
+/**
+ * ======================================== button
+ */
+.button {
+    grid-column: 1 / -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--color-beige);
+    background-color: var(--color-black);
+
+    height: var(--space-15);
+    padding-inline: var(--space-8);
+
+    --icon-color: var(--color-beige);
+}
+
+@media (width >= 744px) {
+    .button {
+        grid-column: 4 / -1;
+    }
+}
+
+@media (width >= 1200px) {
+    .button {
+        grid-column: 5 / -1;
+    }
+}
+
+@media (hover: hover) {
+    .button:hover {
+        background-color: var(--color-orange);
+        color: var(--color-black);
+        --icon-color: var(--color-black);
+    }
+}
+
+
+.icon {
+    display: inline-flex;
+    transform: rotate(180deg);
+}

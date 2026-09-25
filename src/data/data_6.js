@@ -6,16 +6,24 @@ export const data_6 = {
     response_chart: {
         content: [
             {
+                id: 1,
                 percent: "94,8",
                 text: [
                     "Ні, домен не важливий"
-                ]
+                ],
+                src: "/images/dither_black.png",
+                height: 20,
+                bgColor: "black"
             },
             {
+                id: 2,
                 percent: "5,2",
                 text: [
                     "Так, потрібен досвід у домені"
-                ]
+                ],
+                src: "/images/dither_white.png",
+                height: 1,
+                bgColor: "white"
             },
         ]
     },

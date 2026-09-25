@@ -31,7 +31,7 @@ export default function ListItemText({id, text = []}) {
         <p className={`f_mono_m ${css.number}`}>{appliedNumber}</p>
         <ul className={`f_body_m_helvetica ${css.text}`}>
             {text.map((el, i) => (
-                <li key={i}>{el}</li>
+                <li key={i} className={css.text_item}>{el}</li>
             ))}
         </ul>
     </li>;

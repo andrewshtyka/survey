@@ -1,0 +1,92 @@
+/**
+ * ======================================== main
+ */
+.li {
+    flex: 1;
+    position: relative;
+    display: flex;
+    
+    flex-direction: column;
+
+    --height: var(--space-5);
+}
+
+/**
+ * ======================================== top
+ */
+
+.top {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: initial;
+    
+    margin-block-end: var(--space-5);
+}
+
+@media (width >= 744px) {
+    .top {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
+
+/**
+ * ======================================== percent bar
+ */
+.container_percent {
+    display: flex;
+    column-gap: var(--space-1);
+    position: relative;
+    margin-block-end: var(--space-4);
+}
+
+@media (width >= 744px) {
+    .container_percent {
+        margin-block-end: var(--space-0);
+    }
+}
+
+.percent {
+    padding-block-start: var(--space-px);
+}
+
+@media (width >=744px) {
+    .percent {
+        padding-block-start: var(--space-1);
+    }
+}
+
+/**
+ * ======================================== top text
+ */
+
+.top_text {
+    max-width: 15ch;
+    text-align: start;
+}
+
+@media (width >= 744px) {
+    .top_text {
+        text-align: end;
+    }
+}
+
+/**
+ * ======================================== chart
+ */
+.chart {
+    position: relative;
+    height: 100px;
+}
+
+
+.dither_bg {
+    width: 100%;
+
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}

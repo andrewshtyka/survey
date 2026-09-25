@@ -1,0 +1,61 @@
+/**
+ * ======================================== main
+ */
+.section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    column-gap: var(--col-gap);
+
+    border-top: var(--space-px) solid var(--color-black);
+    position: relative;
+
+    margin-block-end: calc(var(--gap-l) * 1.5);
+}
+
+@media (width >= 744px) {
+    .section {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media (width >= 1200px) {
+    .section {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+/**
+ * ======================================== list data
+ */
+.list_data_container {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    padding-inline-end: var(--space-6);
+    margin-block-end: var(--gap-m);
+}
+
+@media (width >= 744px) {
+    .list_data_container {
+        grid-column: 3 / -1;
+    }
+}
+
+@media (width >= 1200px) {
+    .list_data_container {
+        grid-column: 5 / -1;
+    }
+}
+
+.list_data {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--space-2);
+}
+
+.description {
+    margin-block-end: var(--space-6);
+}
+
