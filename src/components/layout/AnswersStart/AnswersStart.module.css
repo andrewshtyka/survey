@@ -8,6 +8,8 @@
     padding: var(--space-8);
     position: relative;
     background-color: var(--color-black);
+    
+    margin-block-end: var(--gap-l);
 }
 
 .img {
