@@ -7,7 +7,7 @@ export const data_4 = {
         content: [
             {
                 id: 1,
-                percent: "52,4",
+                percent: "52,2",
                 text: [
                     "1 – 3 хв"
                 ],
@@ -21,7 +21,7 @@ export const data_4 = {
             },
             {
                 id: 2,
-                percent: "32,6",
+                percent: "32,1",
                 text: [
                     "3 хв +"
                 ],
@@ -35,7 +35,7 @@ export const data_4 = {
             },
             {
                 id: 3,
-                percent: "15,8",
+                percent: "15,7",
                 text: [
                     "До 30 с"
                 ],

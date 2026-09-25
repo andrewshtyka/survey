@@ -51,7 +51,7 @@ export const data_5 = {
             },
             {
                 id: 3,
-                percent: "20,1",
+                percent: "19,1",
                 text: [
                     "1 якісний"
                 ],
