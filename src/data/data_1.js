@@ -75,6 +75,12 @@ export const data_1 = {
                     "Craft, Problem solving, depth of effort & ownership"
                 ]
             },
+            {
+                id: 7,
+                text: [
+                    "Високий рівень крафту, прототипи"
+                ]
+            },
         ]
     }
 };

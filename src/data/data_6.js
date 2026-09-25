@@ -7,7 +7,7 @@ export const data_6 = {
         content: [
             {
                 id: 1,
-                percent: "90,9",
+                percent: "91,3",
                 text: [
                     "Ні, домен не важливий"
                 ],
@@ -17,7 +17,7 @@ export const data_6 = {
             },
             {
                 id: 2,
-                percent: "9,1",
+                percent: "8,7",
                 text: [
                     "Так, потрібен досвід у домені"
                 ],

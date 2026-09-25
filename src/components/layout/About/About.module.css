@@ -73,7 +73,7 @@
 }
 
 .title_description {
-    max-width: 25ch;
+    max-width: 40ch;
     grid-column: 4 / -1;
 }
 
