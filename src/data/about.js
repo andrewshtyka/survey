@@ -12,8 +12,8 @@ export const dataAbout = {
             id: 2,
             hasFigures: true,
             title: "Хто?",
-            figures: "19",
-            text: "керівників дизайн відділів продуктових компаній",
+            figures: "22",
+            text: "керівники дизайн відділів продуктових компаній",
         },
         {
             id: 3,

@@ -42,34 +42,33 @@ export default function About() {
                     <Asterisk />
                 </div>
                 <p className={`f_mono_m f_uppercase ${css.title_description}`}>
-                    продуктові компанії,
-                    без агенцій та аутсорсу
+                    {dataAbout.content[0].text}
                 </p>
             </div>
 
             {/* col 2 */}
             <div className={css.content_wrapper}>
                 <p className={`f_mono_m f_uppercase ${css.title_top}`}>
-                    Хто?
+                    {dataAbout.content[1].title}
                 </p>
                 <p className={`f_h2_helvetica ${css.figure}`}>
-                    19
+                    {dataAbout.content[1].figures}
                 </p>
                 <p className={`f_mono_m f_uppercase ${css.title_bottom}`}>
-                    керівників дизайн відділів продуктових компаній
+                    {dataAbout.content[1].text}
                 </p>
             </div>
 
             {/* col 3 */}
             <div className={css.content_wrapper}>
                 <p className={`f_mono_m f_uppercase ${css.title_top}`}>
-                    Коли?
+                    {dataAbout.content[2].title}
                 </p>
                 <p className={`f_h2_helvetica f_capitalize ${css.figure}`}>
-                    вер 26ʼ
+                    {dataAbout.content[2].figures}
                 </p>
                 <p className={`f_mono_m f_uppercase ${css.title_bottom}`}>
-                    Період проведення дослідження
+                    {dataAbout.content[2].text}
                 </p>
             </div>
         </div>

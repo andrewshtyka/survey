@@ -29,7 +29,7 @@ export const data_5 = {
             },
             {
                 id: 2,
-                percent: "31,6",
+                percent: "34,6",
                 text: [
                     "3 – 5"
                 ],
@@ -51,7 +51,7 @@ export const data_5 = {
             },
             {
                 id: 3,
-                percent: "21,1",
+                percent: "20,1",
                 text: [
                     "1 якісний"
                 ],
@@ -73,7 +73,7 @@ export const data_5 = {
             },
             {
                 id: 4,
-                percent: "10,5",
+                percent: "9,5",
                 text: [
                     "5 і більше"
                 ],
