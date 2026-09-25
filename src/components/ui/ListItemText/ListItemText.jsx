@@ -24,10 +24,15 @@ import React from "react";
 
 // #endregion ===========================
 
-export default function ListItemText({id, text = []}) {
+export default function ListItemText({id, text = [], isLast = false}) {
     const appliedNumber = id.toString().length > 1 ? id : `0${id}`;
 
-    return <li className={css.li_card}>
+    return <li
+            className={css.li_card}
+            style={{
+                marginBlockEnd: isLast ? 0 : "var(--gap-s)"
+            }}
+        >
         <p className={`f_mono_m ${css.number}`}>{appliedNumber}</p>
         <ul className={`f_body_m_helvetica ${css.text}`}>
             {text.map((el, i) => (

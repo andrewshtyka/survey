@@ -32,10 +32,16 @@ import React from "react";
 // #endregion ===========================
 
 export default function Question_3() {
+    const totalAnswers = data_3.response_text.content.length;
+
     return <section className={css.section}>
         <AnswerTop data={data_3} />
 
-        <AnswersList data={data_3} gridRow="2 / 3" />
+        <AnswersList
+            data={data_3}
+            gridRow="2 / 3"
+            totalAnswers={totalAnswers}
+        />
         
         <Conclusion
             id={data_3.id}

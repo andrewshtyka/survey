@@ -33,6 +33,8 @@ import React from "react";
 // #endregion ===========================
 
 export default function Question_1() {
+    const totalAnswers = data_1.response_text.content.length;
+    
     return <section className={css.section}>
         <AnswerTop data={data_1} />
 
@@ -48,12 +50,17 @@ export default function Question_1() {
                         percent={percent}
                         text={text}
                         width={width}
+                        
                     />
                 ))}
             </ul>
         </div>
 
-        <AnswersList data={data_1} gridRow="3 / 4" />
+        <AnswersList
+            data={data_1}
+            gridRow="3 / 4"
+            totalAnswers={totalAnswers}
+        />
         
         <Conclusion
             id={data_1.id}

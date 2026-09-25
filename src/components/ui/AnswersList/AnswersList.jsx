@@ -25,7 +25,7 @@ import React from "react";
 
 // #endregion ===========================
 
-export default function AnswersList({ data, gridRow }) {
+export default function AnswersList({ data, gridRow, totalAnswers }) {
     return <div
                 className={css.list_text_container}
                 style={{ gridRow: gridRow }}
@@ -40,6 +40,7 @@ export default function AnswersList({ data, gridRow }) {
                         key={id}
                         id={id}
                         text={text}
+                        isLast={totalAnswers === id ? true : false}
                     />
                 ))}
             </ul>
