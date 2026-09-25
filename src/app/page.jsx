@@ -13,6 +13,9 @@ import About from "@/components/layout/About/About";
 import Results from "@/components/layout/Results/Results";
 import AnswersStart from "@/components/layout/AnswersStart/AnswersStart";
 import Question_1 from "@/components/layout/Question_1/Question_1";
+import Question_2 from "@/components/layout/Question_2/Question_2";
+import Question_3 from "@/components/layout/Question_3/Question_3";
+import Question_4 from "@/components/layout/Question_4/Question_4";
 
 // constants
 
@@ -35,5 +38,8 @@ export default function HomePage() {
         <Results />
         <AnswersStart />
         <Question_1 />
+        <Question_2 />
+        <Question_3 />
+        <Question_4 />
     </>;
 }

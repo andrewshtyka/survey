@@ -30,12 +30,16 @@
     /* */
     /* Gaps */
     --gap-l: var(--space-18);
+    --gap-m: clamp(3rem, 2.6226rem + 1.8868vw, 3.5rem);
+    --gap-s: var(--space-12);
+    --gap-xs: var(--space-11);
     --col-gap: var(--space-6);
 }
 
 @media (width >= 744px) {
     :root {
         --gap-l: var(--space-19);
+        --gap-m: clamp(3.5rem, 2.6842rem + 1.7544vw, 4rem);
         --col-gap: var(--space-11);
     }
 }

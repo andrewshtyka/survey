@@ -1,0 +1,52 @@
+/**
+ * ======================================== main
+ */
+.li {
+    position: relative;
+    border-left: var(--space-px) solid var(--color-black);
+
+    --offset: var(--space-12);
+}
+
+/**
+ * ======================================== top text
+ */
+.top_text {
+    background-color: var(--color-black);
+    width: fit-content;
+    color: var(--color-beige);
+
+    padding-inline: var(--space-4);
+    padding-block-start: var(--space-2);
+    padding-block-end: var(--space-3);
+}
+
+/**
+ * ======================================== percent bar
+ */
+.dither_bg {
+    width: 100%;
+
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.container_percent {
+    display: flex;
+    column-gap: var(--space-1);
+    position: relative;
+    padding-inline: clamp(0.5rem, 0.3113rem + 0.9434vw, 0.75rem);
+    padding-block-start: calc(clamp(0.5rem, 0.3113rem + 0.9434vw, 0.75rem) * 0.75);
+    padding-block-end: var(--space-12);
+}
+
+.percent {
+    padding-block-start: var(--space-px);
+}
+
+@media (width >= 744px) {
+    .percent {
+        padding-block-start: var(--space-1);
+    }
+}

@@ -1,0 +1,124 @@
+/**
+ * ======================================== card
+ */
+.article {
+    grid-column: 1 / -1;
+    padding-block: var(--space-6);
+    background-color: var(--color-orange);
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    position: relative;
+
+    &::after {
+        /* top */
+        content: "";
+        position: absolute;
+        background-color: var(--color-beige);
+
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+        top: calc(var(--space-2) * -1);
+        right: calc(var(--space-2) * -1);
+        width: var(--space-12);
+        height: var(--space-12);
+    }
+
+    &::before {
+        /* bottom */
+        content: "";
+        position: absolute;
+        background-color: transparent;
+
+        clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+        bottom: calc(var(--space-2) * -1);
+        left: var(--space-18);
+    
+        width: var(--space-16);
+        height: 80%;
+        z-index: 1;
+    }
+}
+
+@media (width >= 744px) {
+    .article {
+        grid-template-columns: repeat(8, 1fr);
+
+        /* top */
+        &::after {
+            clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+            top: calc(var(--space-px) * -1);
+            left: calc(var(--space-px) * -1);
+            width: var(--space-18);
+            height: 100%;
+        }
+
+        &::before {
+            background-color: var(--color-beige);
+        }
+    }
+}
+
+@media (width >= 1200px) {
+    .article {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+/**
+ * ======================================== text container
+ */
+.text_container {
+    grid-column: 1 / -1;
+    z-index: 0;
+    padding-inline-start: var(--space-6);
+    padding-inline-end: var(--space-6);
+}
+
+@media (width >=744px) {
+    .text_container {
+        grid-template-columns: repeat(8, 1fr);
+        grid-column: 3 / -1;
+        padding-inline-start: var(--space-0);
+    }
+}
+
+@media (width >=1200px) {
+    .text_container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-column: 5 / -2;
+    }
+}
+
+.title {
+    margin-block-end: var(--gap-s);
+}
+
+@media (width >= 744px) {
+    .title {
+        margin-block-end: calc(var(--gap-m) * 1.5);
+    }
+}
+
+.text {
+    width: 100%;
+}
+
+@media (width >= 1200px) {
+    .text {
+        width: 80%;
+    }
+}
+
+/**
+ * ======================================== dither bg
+ */
+.dither_bg {
+    width: 100%;
+
+    position: absolute;
+    inset: 0;
+
+    background-color: var(--color-orange);
+    background-image: url("/images/dither_orange.png");
+}

@@ -24,6 +24,15 @@ import React from "react";
 
 // #endregion ===========================
 
-export default function ListItemText() {
-    return <li></li>;
+export default function ListItemText({id, text = []}) {
+    const appliedNumber = id.toString().length > 1 ? id : `0${id}`;
+
+    return <li className={css.li_card}>
+        <p className={`f_mono_m ${css.number}`}>{appliedNumber}</p>
+        <ul className={`f_body_m_helvetica ${css.text}`}>
+            {text.map((el, i) => (
+                <li key={i}>{el}</li>
+            ))}
+        </ul>
+    </li>;
 }

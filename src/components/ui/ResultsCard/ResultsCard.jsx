@@ -17,7 +17,6 @@
 // providers / context
 
 // styles
-import { li } from 'motion/react-client';
 import css from './ResultsCard.module.css'
 
 // utility

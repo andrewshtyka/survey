@@ -10,6 +10,7 @@
     --font-size-helvetica-h3: clamp(2.5rem, 1.3679rem + 5.6604vw, 4rem);
     --font-size-helvetica-h4: clamp(1.125rem, 1.0307rem + 0.4717vw, 1.25rem);
     --font-size-helvetica-h5: clamp(1.75rem, 0.8066rem + 4.717vw, 3rem);
+    --font-size-helvetica-h6: clamp(1.5rem, 0.7453rem + 3.7736vw, 2.5rem);
 
     --font-size-helvetica-body-l: clamp(0.875rem, 0.7807rem + 0.4717vw, 1rem);
     --font-size-helvetica-body-m: var(--space-7);
@@ -30,7 +31,9 @@
     --font-line-height-helvetica-h1: 1;
     --font-line-height-helvetica-h2: 1;
     --font-line-height-helvetica-h3: 1.1;
-    --font-line-height-helvetica-h4: 1.1;--font-line-height-helvetica-h5: 0.95;
+    --font-line-height-helvetica-h4: 1.1;
+    --font-line-height-helvetica-h5: 0.95;
+    --font-line-height-helvetica-h6: 1;
 
     --font-line-height-helvetica-body-l: 1.2;
     --font-line-height-helvetica-body-m: 1.4;
@@ -50,7 +53,9 @@
     --font-letter-spacing-helvetica-h1: -4%;
     --font-letter-spacing-helvetica-h2: -6%;
     --font-letter-spacing-helvetica-h3: -4%;
-    --font-letter-spacing-helvetica-h4: -2%;--font-letter-spacing-helvetica-h5: -4%;
+    --font-letter-spacing-helvetica-h4: -2%;
+    --font-letter-spacing-helvetica-h5: -4%;
+    --font-letter-spacing-helvetica-h6: -4%;
 
     --font-letter-spacing-helvetica-body-l: -2%;
     --font-letter-spacing-helvetica-body-m: -2%;
@@ -75,7 +80,7 @@
 }
 
 .f_h1_helvetica {
-    font-family: var(--font-helvetica), var(--font-fallback);
+    font-family: var(\--font-helvetica), var(--font-fallback);
     font-size: var(--font-size-helvetica-h1);
     font-weight: 500;
     line-height: var(--font-line-height-helvetica-h1);
@@ -112,6 +117,14 @@
     font-weight: 500;
     line-height: var(--font-line-height-helvetica-h5);
     letter-spacing: var(--font-letter-spacing-helvetica-h5);
+}
+
+.f_h6_helvetica {
+    font-family: var(--font-helvetica), var(--font-fallback);
+    font-size: var(--font-size-helvetica-h6);
+    font-weight: 500;
+    line-height: var(--font-line-height-helvetica-h6);
+    letter-spacing: var(--font-letter-spacing-helvetica-h6);
 }
 
 .f_body_l_helvetica {
@@ -204,4 +217,8 @@
 
 .f_center {
     text-align: center;
+}
+
+.f_mono_spacing_0 {
+    letter-spacing: 0%;
 }

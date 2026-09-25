@@ -1,0 +1,36 @@
+.li_card {
+    border-top: var(--space-px) solid var(--color-black);
+    display: grid;
+    flex-direction: column;
+    column-gap: var(--col-gap);
+
+    grid-template-columns: repeat(6, 1fr);
+    margin-block-end: var(--gap-s);
+}
+
+@media (width >= 1200px) {
+    .li_card {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+/**
+ * ======================================== number
+ */
+.number {
+    padding-block-start: var(--space-6);
+}
+
+/**
+ * ======================================== text
+ */
+.text {
+    grid-column: 2 / -1;
+    padding-block-start: var(--space-6);
+}
+
+@media (width >= 1200px) {
+    .text {
+        grid-column: 3 / -2;
+    }
+}
